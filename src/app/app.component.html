@@ -1,0 +1,11 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+<div>
+  <input [(ngModel)]="user.firstName" placeholder="First Name" />
+</div>
+<input [(ngModel)]="user.lastName" placeholder="Last Name" />
+<div>
+  <button (click)="save()">Save</button>
+
+  <div *ngFor="let ar of arr">{{ ar.name }} {{ ar.id }}</div>
+</div>
